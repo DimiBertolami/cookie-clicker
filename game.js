@@ -11,6 +11,11 @@ document.getElementById("upgrade").addEventListener("click", function() {
     } else {
         // document.getElementById("upgrade").disabled = true;
     }
+    if(document.getElementById("multiplierID").textContent === "cookie (x10)"){
+        multiplier = 100;
+        document.getElementById("upgrade").disabled = true;
+        document.getElementById("multiplierID").textContent = "cookie (x100)"
+    }
 });
 
 document.getElementById("upgrade2").addEventListener("click", function() {
@@ -46,9 +51,11 @@ function addCookie(){
     } else if(multiplier===2){
         counter=counter+2;
     } else if(multiplier===4){
-        counter=counter+4
+        counter=counter+4;
     } else if(multiplier===10){
-        counter=counter+10
+        counter=counter+10;
+    } else if(multiplier===100){
+        counter=counter+100;
     }
     document.getElementById("counter").innerHTML = counter;
     if(counter===20){
