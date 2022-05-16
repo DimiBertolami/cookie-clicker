@@ -1,6 +1,9 @@
 # cookie-clicker
 going to write an incremental cookie clicker game
 
+
+https://dimibertolami.github.io/cookie-clicker/
+
 1. clickable cookie
 2. counter keeps track of number of times cookie clicked
 3. booster button 20 dollar
